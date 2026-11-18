@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Museo – Museum Exhibition Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a href="#home" class="logo">MUSEO</a>
+  <nav>
+    <a href="#home">Home</a><a href="#exhibitions">Exhibitions</a><a href="#artworks">Artworks</a>
+    <a href="#artists">Artists</a><a href="#galleries">Galleries</a><a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1>Discover Art. Explore History. Experience Culture.</h1>
+    <p>Museo brings together Indian and international art: paintings, sculpture, traditional crafts and photography.</p>
+    <a class="btn" href="#exhibitions">Explore Exhibitions</a>
+  </div>
+</section>
+
+<div class="stats" id="stats"></div>
+
+<section id="exhibitions">
+  <h2>Exhibitions</h2>
+  <div class="bar">
+    <input id="exSearch" placeholder="Search exhibitions...">
+    <select id="exCat"><option value="">All categories</option></select>
+    <select id="exStatus"><option value="">Any status</option><option>Upcoming</option><option>Ongoing</option><option>Completed</option></select>
+    <select id="exSort"><option value="asc">Earliest first</option><option value="desc">Latest first</option></select>
+  </div>
+  <div class="grid" id="exList"></div>
+</section>
+
+<section id="artworks">
+  <h2>Artworks</h2>
+  <div class="bar">
+    <input id="awSearch" placeholder="Search artworks or artists...">
+    <select id="awCat"><option value="">All categories</option></select>
+  </div>
+  <div class="grid" id="awList"></div>
+</section>
+
+<section id="artists">
+  <h2>Artists</h2>
+  <div class="bar"><input id="arSearch" placeholder="Search artists..."></div>
+  <div class="grid" id="arList"></div>
+</section>
+
+<section id="galleries">
+  <h2>Galleries</h2>
+  <div class="grid" id="glList"></div>
+</section>
+
+<section id="visit">
+  <h2>Plan Your Visit</h2>
+  <div class="grid">
+    <div class="card pad"><h3>Opening hours</h3><p>Tue–Sun, 10:00–18:00<br>Closed on Mondays</p></div>
+    <div class="card pad"><h3>Tickets</h3><p>Adults ₹50 · Students ₹20<br>Foreign visitors ₹500<br>Under 12: free</p></div>
+    <div class="card pad"><h3>Contact</h3><p>12 Kala Marg, New Delhi<br>+91 11 5555 0123<br>hello@museo.example</p></div>
+  </div>
+  <h3 class="faqh">FAQ</h3>
+  <details><summary>Can I take photographs?</summary><p>Yes, without flash.</p></details>
+  <details><summary>Are guided tours available?</summary><p>Free tours run daily at 11:00 and 15:00.</p></details>
+  <details><summary>Is the museum wheelchair accessible?</summary><p>Yes, all floors have lifts and ramps.</p></details>
+</section>
+
+<footer>© 2026 Museo · 12 Kala Marg, New Delhi</footer>
+
+<div id="modal" class="modal" hidden><div class="box"><button id="close">✕</button><div id="modalBody"></div></div></div>
+<script src="script.js"></script>
+</body>
+</html>
